@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #17332b;
+  background: #f5f3e9;
+}
+body { margin: 0; }
+main { max-width: 50rem; margin: clamp(1rem, 8vw, 5rem) auto; padding: 0 1rem; }
+.masthead {
+  background: #164438;
+  color: #fffdf0;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: clamp(1.5rem, 6vw, 3rem);
+}
+.brand { display: flex; align-items: center; gap: .65rem; font-weight: 700; }
+.brand span { background: #e0eeae; color: #164438; border-radius: .45rem; padding: .15rem .55rem; }
+h1 { margin: 1.2rem 0 .5rem; font: 500 clamp(2.75rem, 8vw, 5rem)/1 Georgia, serif; }
+#count { margin: 0; color: #e0eeae; }
+.panel {
+  background: #fffdf7;
+  padding: clamp(1rem, 5vw, 2.5rem);
+  border: 1px solid #dedfd1;
+  border-top: 0;
+  border-radius: 0 0 1.25rem 1.25rem;
+  box-shadow: 0 1rem 2.5rem #17332b0d;
+}
+form label { display: block; margin-bottom: .5rem; font-weight: 700; }
+.entry, .toolbar, .filters { display: flex; align-items: center; gap: .5rem; }
+.entry { align-items: stretch; }
+.toolbar { flex-wrap: wrap; justify-content: space-between; margin-top: 1.65rem; }
+input, button { font: inherit; }
+.entry input { min-width: 0; width: 100%; border: 1px solid #82918a; border-radius: .55rem; padding: .75rem; background: #fff; }
+button { color: #164438; background: transparent; border: 1px solid transparent; border-radius: .5rem; padding: .55rem .7rem; cursor: pointer; }
+button:hover:not(:disabled) { background: #edf0e5; }
+button:focus-visible, input:focus-visible { outline: 3px solid #3e7259; outline-offset: 3px; }
+button:disabled { color: #626b63; cursor: default; opacity: .7; }
+.primary { flex: none; color: #fff; background: #164438; font-weight: 700; }
+.primary:hover:not(:disabled) { background: #225a49; }
+[aria-pressed="true"] { background: #dfeacb; font-weight: 700; }
+#list { padding: 0; margin: .7rem 0 0; list-style: none; }
+#list li { display: flex; align-items: center; justify-content: space-between; gap: .5rem; border-top: 1px solid #dedfd1; padding: .55rem 0; }
+#list label { display: flex; min-width: 0; gap: .75rem; align-items: center; cursor: pointer; padding: .4rem 0; }
+#list span { overflow-wrap: anywhere; }
+#list input { flex: none; margin: 0; width: 1.2rem; height: 1.2rem; accent-color: #164438; }
+.done span { text-decoration: line-through; color: #59675e; }
+#empty { border-top: 1px dashed #bfc8bb; padding: 1.5rem .5rem .5rem; text-align: center; color: #59675e; }
+#storage-status { color: #8a421d; }
+
